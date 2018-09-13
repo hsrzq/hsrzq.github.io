@@ -1,0 +1,61 @@
+version: 1.0
+
+gems: [jekyll-paginate]
+sass:
+    sass_dir: /assets/stylesheet
+    style: :compressed
+
+title: "BI1DXB随笔"
+description: "这是BI1DXB的随手笔记"
+keywords: "TechQI bi1dxb zhangqi 张琦 技术琦 Android Linux Java Kotloin PHP Python 树莓派 RaspberryPi Arduino 51 MCU 无线电"
+locale: "zh_CN"
+
+url: ""
+baseurl: ""
+permalink: :categories/:year/:title
+
+paginate: 15
+paginate_path: "/page:num/"
+
+highlighter: 'pygments'
+kramdown:
+  input:  GFM
+  enable_coderay: true
+  coderay:
+    coderay_line_numbers:  nil
+
+rss:
+  path: "/feed.xml"
+  icon: "rss"
+
+author:
+  name: "BI1DXB"
+  avatar: "assets/images/avatar.jpg"
+  motto: "最穷无非讨饭<br />不死终会出头"
+
+socials:
+    - name: "weibo"
+      url: "http://www.weibo.com/hsrzq/"
+      icon: "weibo"
+    - name: "github"
+      url: "https://github.com/hsrzq"
+      icon: "github"
+    - name: "facebook"
+      url: "https://www.facebook.com/TechQi.top"
+      icon: "facebook"
+
+
+comment:
+  enable: true
+
+changyan:
+  enable: true
+  appid: "cytO4DJ4e"
+  conf: "prod_92c26b364209a227f0942d08e090eae2"
+
+baidu_analysis:
+  enable: true
+  token: "b020829f61281a2f2b56ed14b90b2359"
+
+google_analysus:
+  enable: false
