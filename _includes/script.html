@@ -1,0 +1,20 @@
+<!--the js include-->
+<script src="{{ site.baseurl}}/assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{ site.baseurl}}/assets/script/pithy.js"></script>
+
+<!--
+  the site comment script
+-->
+{% if site.changyan.enable %}
+  {% include comment/changyan.html%}
+{% endif %}
+
+<!--
+  the site analysis script
+-->
+{% if site.baidu_analysis.enable %}
+  {% include analysis/baidu.html %}
+{% endif %}
+{% if site.google_analysis.enable %}
+  {% include analysis/google.html %}
+{% endif %}
